@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, NetInfo, Dimensions, StyleSheet } from 'react-native';
-import {ScaleUsingViewWidth} from '../Helper/DetermineFontScale';
+import {ScaleUsingViewWidth, ScaleFont} from '../Helper/DetermineFontScale';
 import { Colors } from '../Themes/Colors';
 import { Fonts } from '../Themes/Fonts';
 
@@ -41,6 +41,7 @@ class OfflineStatus extends Component {
           top: ScaleUsingViewWidth(this.props.top)
         },
         offlineText: { 
+          fontSize: ScaleFont(11.0),
           fontFamily: Fonts.mediumFont,
           color: '#fff'
         }
